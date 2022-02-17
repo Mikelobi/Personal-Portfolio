@@ -58,9 +58,9 @@ nav {
   font-size: 40px;
   font-weight: bold;
   font-style: normal;
-  font-family: serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 52px;
-  color: black;
+  color: #172B4D;
   align-items: center;
 }
 
@@ -69,8 +69,8 @@ nav {
   left: 24px;
   font-size: 16px;
   font-style: normal;
-  font-family: Arial, Helvetica, sans-serif;
-  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #344563;
   line-height: 30px;
   margin: 0 0;
 }
@@ -80,7 +80,7 @@ nav {
 }
 
 .two a {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 24px;
   font-size: 15px;
   text-decoration: none;
@@ -121,8 +121,8 @@ nav {
 
 .card-heading {
   font-style: normal;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  line-height: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 44px;
   color: black;
   font-size: 32px;
   font-weight: bold;
@@ -140,6 +140,8 @@ nav {
   font-family: sans-serif;
   color: #344563;
   line-height: 24px;
+  margin-block-start: 5px;
+  margin-block-end: 0;
 }
 
 .tool1 {
@@ -176,6 +178,8 @@ nav {
   border-radius: 3px;
   text-align: center;
   padding: 4px 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
 }
 
 .tool2 a {
@@ -184,10 +188,14 @@ nav {
 }
 
 .detail-style2 {
-  width: 124px;
+  width: 135px;
+  font-size: 17px;
+  font-style: normal;
   font-weight: 500;
   line-height: 24px;
   text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  align-items: center;
   color: blue;
   letter-spacing: 0.03em;
   border: 1px solid #dfe1e6;
@@ -210,13 +218,19 @@ nav {
 
 h2 {
   font-size: 40px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 52px;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 .info-link {
   text-decoration: none;
-  color: blue;
+  color: rgb(141, 141, 241);
+  font-weight: normal;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .about-social {
@@ -226,17 +240,19 @@ h2 {
   padding-inline-start: 0%;
   list-style: none;
   padding: 5px 0;
+  align-items: baseline;
 }
 
 .myself > * {
-  margin: 25px 0;
+  margin: 5px 0 12px;
 }
 
 .about-detail {
   font-size: 16px;
   line-height: 24px;
   font-weight: normal;
-  font-family: sans-serif;
+  font-style: normal;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #344563;
 }
 
@@ -251,18 +267,18 @@ h2 {
 
 .my-resume {
   font-weight: 500;
-  line-height: 30px;
+  line-height: 24px;
   text-align: center;
-  font-size: 15px;
+  font-size: 17px;
   color: blue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   letter-spacing: 0.03em;
-  border: 1px solid #dfe1e6;
+  border: 1px solid #b8caf8;
   padding: 10px;
   background: white;
   border-radius: 10px;
   cursor: pointer;
   margin: 0;
-  text-transform: capitalize;
 }
 
 .button a {
@@ -272,21 +288,25 @@ h2 {
 
 .button:hover {
   box-shadow: 0 8px 16px rgb(175, 175, 236);
+  color: white;
+  background: rgb(167, 167, 252);
 }
 
 .button:active {
-  background: white;
+  background: rgb(44, 94, 233);
+  color: white;
   transform: translateY(2px);
 }
 
 .lang {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 .size {
-  width: 20px;
-  height: 20px;
+  width: 12px;
+  height: 12px;
 }
 
 .icons {
@@ -306,10 +326,11 @@ h2 {
 .word {
   font-size: 20px;
   align-items: center;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 24px;
-  color: #000;
+  color: black;
   font-style: normal;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .word:hover {
@@ -331,5 +352,9 @@ h2 {
 
 .spac a {
   text-decoration: none;
-  color: #000;
+  color: #253858;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  line-height: 20px;
 }
