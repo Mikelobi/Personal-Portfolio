@@ -353,6 +353,7 @@ h2 {
   align-items: center;
   justify-content: center;
   padding: 10px 10px;
+  margin: 0;
 }
 
 .text-contact {
@@ -366,14 +367,14 @@ h2 {
   font-size: 40px;
   line-height: 52px;
   text-align: center;
-  color: #ebebff;
+  color: #fafafc;
   margin: 20px 0 20px;
 }
 
 .text-contact p {
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 28px;
   text-align: center;
   color: #ebebff;
@@ -389,7 +390,7 @@ h2 {
 }
 
 .form-contact {
-  margin: 10px 5px;
+  margin: 10px 0;
   display: flex;
   flex-direction: column;
 }
@@ -402,12 +403,12 @@ h2 {
 }
 
 .form-contact input {
-  margin: 10px 5px;
+  margin: 10px 0;
   background: #fff;
   border: 1px solid #d0d9d4;
   box-sizing: border-box;
   border-radius: 8px;
-  min-width: 327px;
+  min-width: 310px;
   height: 48px;
   font-weight: 400;
   font-size: 15px;
@@ -419,12 +420,12 @@ h2 {
 }
 
 .form-contact textarea {
-  margin: 10px 5px;
+  margin: 10px 0;
   background: #fff;
   color: #b3bac5;
   border-radius: 8px;
   padding: 12px;
-  min-width: 327px;
+  min-width: 310px;
   height: 170px;
   font-size: 15px;
   line-height: 24px;
@@ -445,7 +446,7 @@ h2 {
   border-radius: 10px;
   cursor: pointer;
   align-self: flex-start;
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
 .contact {
@@ -465,7 +466,7 @@ h2 {
     80% 89.5%,
     71.3% 90.3%;
   background-repeat: no-repeat;
-  width: 375px;
+  width: 100%;
 }
 
 .bar {
