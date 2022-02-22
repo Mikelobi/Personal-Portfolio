@@ -457,15 +457,13 @@ h2 {
     url(image/Ellipse-12.png),
     url(image/Ellipse-3.png),
     url(image/Rectangle-7.png),
-    url(image/Ellipse-5.png)
-  ;
+    url(image/Ellipse-5.png);
   background-position: 
     100% 3%,
     42% 8%,
     100% 7%,
     80% 89.5%,
-    71.3% 90.3%
-  ;
+    71.3% 90.3%;
   background-repeat: no-repeat;
   width: 375px;
 }
