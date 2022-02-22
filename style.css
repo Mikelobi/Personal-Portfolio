@@ -466,6 +466,7 @@ h2 {
     80% 89.5%,
     71.3% 90.3%;
   background-repeat: no-repeat;
+  border-radius: 50px 0 0;
   width: 100%;
 }
 
