@@ -750,8 +750,7 @@ h2 {
 
   .contact {
     margin: 0;
-    background-image:
-    url(image/contact\ form-background-shapes.png);
+    background-image: url(image/contact\ form-background-shapes.png);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: -0.5em 3em;
