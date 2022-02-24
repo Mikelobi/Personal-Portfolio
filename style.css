@@ -79,7 +79,6 @@ header {
   color: #344563;
   line-height: 30px;
   margin: 10px 0;
-  font-weight: 400;
 }
 
 .detail {
@@ -482,12 +481,13 @@ h2 {
   margin: 20px 0 0;
 }
 
-.menu-list, .web {
+.menu-list,
+.web {
   display: none;
 }
 
-@media screen  and (min-width: 992px) and (max-width: 1100px){
-
+@media screen  and (min-width: 992px) and (max-width: 1100px) {
+  
   .menu-logo {
     display: none;
   }
@@ -529,6 +529,10 @@ h2 {
     background-color: #fff;
   }
 
+  header a {
+    margin-left: 3em;
+  }
+
   .menu-list a {
     font-weight: 500;
     font-size: 15px;
@@ -538,10 +542,6 @@ h2 {
     display: inline-block;
     text-align: center;
     text-transform: capitalize;
-  }
-
-  header a {
-    margin-left: 3em;
   }
 
   .container-section {
@@ -564,15 +564,19 @@ h2 {
   }
 
   .one {
-  font-size: 48px;
-  line-height: 60px;
-  color: #091e42;
-  letter-spacing: 0.37px;
+    font-size: 48px;
+    line-height: 60px;
+    color: #091e42;
+    letter-spacing: 0.37px;
   }
 
   .two {
     font-size: 20px;
     line-height: 28px;
+  }
+
+  .two a {
+    font-weight: 500;
   }
 
   .detail .two {
@@ -728,7 +732,6 @@ h2 {
     margin: 0;
   }
 
-  
   .icons {
     margin-right: 5px;
     display: flex;
