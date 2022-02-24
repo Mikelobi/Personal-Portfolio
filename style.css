@@ -388,11 +388,11 @@ h2 {
   margin: 0 0 10px;
 }
 
-.auto-roll {
+.move-slighly {
   transition: transform 2s;
 }
 
-.auto-roll:hover {
+.move-slighly:hover {
   transform: translate(10px);
 }
 
@@ -773,6 +773,7 @@ h2 {
   
   .text-contact p {
     font-size: 20px;
+    width: auto;
   }
 
   .form-contact input {
