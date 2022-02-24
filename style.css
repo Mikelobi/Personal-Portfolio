@@ -388,11 +388,11 @@ h2 {
   margin: 0 0 10px;
 }
 
-.auto-rol {
+.auto-roll {
   transition: transform 2s;
 }
 
-.auto-rol:hover {
+.auto-roll:hover {
   transform: translate(10px);
 }
 
@@ -729,6 +729,10 @@ h2 {
   .language-detail .desktop {
     display: flex;
     margin: 0;
+  }
+
+  .language-detail ul {
+    padding: 0;
   }
 
   .icons {
