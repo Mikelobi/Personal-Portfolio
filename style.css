@@ -3,14 +3,16 @@
 body {
   margin: 0 auto;
   padding: 0;
+  min-width: 375px;
+  min-height: 100vh;
 }
 
 main {
   width: 100%;
   margin: 12px auto;
-  align-items: flex-start;
-  flex-direction: column;
   display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
   padding: 12px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -48,6 +50,7 @@ header {
   width: 100%;
   height: auto;
   background-image: url(image/header-shapes\ mobile.png);
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -114,7 +117,8 @@ header {
   grid-auto-flow: row;
   width: 100%;
   gap: 40px;
-  justify-content: center;
+  /* justify-content: center;
+  flex: 1 1 auto; */
 }
 
 .card {
@@ -122,6 +126,12 @@ header {
   background: white;
   border: 1px solid #dfe1e6;
   border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card .mob {
+  width: 100%;
 }
 
 .card-heading {
