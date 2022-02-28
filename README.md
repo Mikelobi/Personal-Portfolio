@@ -10,7 +10,7 @@ This project is to setup a portfolio of mobile version skeleton main page
 
 ## Live Demo
 
-[Live Demo Link] (https://mikelobi.github.io/Personal-Portfolio/)
+See my [Personal-Portfolio](https://mikelobi.github.io/Personal-Portfolio/)
 
 
 ## Getting Started
