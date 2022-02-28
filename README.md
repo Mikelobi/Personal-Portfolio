@@ -1,3 +1,5 @@
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
 # Portfolio-Mobile-Version-Setup
 
 ## Description the project
@@ -5,6 +7,26 @@ This project is to setup a portfolio of mobile version skeleton main page
 
 ## Built With
 * HTML and CSS
+
+## Live Demo
+
+See my [Personal-Portfolio](https://mikelobi.github.io/Personal-Portfolio/)
+
+
+## Getting Started
+
+-Clone the project via terminal or download the package.
+
+-Open index.html file via browser
+
+### Prerequisites
+
+1. Should have installed any web browser
+
+### Setup
+
+- Simply fork this project and it should be ready for you to edit as you see fit.
+- In case you run into any errors please raise an [issue](https://github.com/Mikelobi/Personal-Portfolio/issues).
 
 ## Authors
 
@@ -19,7 +41,6 @@ Contributions, issues, and feature requests are welcome!
 
 Reach out to me through my email contact - mark.omulu@gmail.com
 
-Feel free to check the [issues page](https://github.com/microverseinc/readme-template/issues).
 ## Show your support
 
 Give a ⭐️ if you like this project!
