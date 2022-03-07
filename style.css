@@ -44,6 +44,79 @@ header {
   text-decoration: none;
 }
 
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  background: #e9eaf1;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.35s ease-in;
+}
+
+.modal.is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-dialog {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background: #fff;
+  overflow: auto;
+  cursor: default;
+  margin-bottom: 2em;
+  padding-top: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-nav-links {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 30px;
+  padding-left: 2em;
+}
+
+.web-header-link {
+  text-decoration: none;
+  font-family: Inter, sans-serif;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  color: #3a4a42;
+}
+
+.close-modal {
+  color: blue;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  align-self: end;
+  padding-right: 1.5em;
+  font-size: 1em;
+}
+
+.nav-mobile-header,
+.modal-links {
+  list-style: none;
+}
+
 .container {
   padding-top: 70px;
   margin-top: 12px;
