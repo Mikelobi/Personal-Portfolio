@@ -118,7 +118,6 @@ header {
   grid-auto-flow: row;
   width: 100%;
   gap: 40px;
-  /*justify-content: center;*/
   align-items: center;
 }
 
