@@ -204,6 +204,10 @@ header {
   width: 100%;
 }
 
+.card img {
+  width: 100%;
+}
+
 .card-heading {
   font-style: normal;
   line-height: 44px;
