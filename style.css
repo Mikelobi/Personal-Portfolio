@@ -124,7 +124,6 @@ header {
   height: auto;
   background-image: url(image/header-shapes\ mobile.png);
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .container-items {
@@ -190,8 +189,6 @@ header {
   grid-auto-flow: row;
   width: 100%;
   gap: 40px;
-  /* justify-content: center;
-  flex: 1 1 auto; */
 }
 
 .card {
