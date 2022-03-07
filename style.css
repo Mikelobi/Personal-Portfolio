@@ -3,14 +3,17 @@
 body {
   margin: 0 auto;
   padding: 0;
+  min-width: 375px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 main {
   width: 100%;
   margin: 12px auto;
-  align-items: flex-start;
-  flex-direction: column;
   display: flex;
+  flex-direction: column;
   padding: 12px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -49,6 +52,7 @@ header {
   height: auto;
   background-image: url(image/header-shapes\ mobile.png);
   background-repeat: no-repeat;
+  background-size: cover;  
 }
 
 .container-items {
@@ -114,7 +118,8 @@ header {
   grid-auto-flow: row;
   width: 100%;
   gap: 40px;
-  justify-content: center;
+  /* justify-content: center; */
+  align-items: center;
 }
 
 .card {
@@ -122,6 +127,10 @@ header {
   background: white;
   border: 1px solid #dfe1e6;
   border-radius: 15px;
+}
+
+.card img {
+  width: 100%;
 }
 
 .card-heading {
