@@ -26,8 +26,32 @@
           <li><a href="#about" class="web-header-link">about</a></li>
           <li><a href="#contact" class="web-header-link">contact</a></li>
           </ul>
-          <img src="image/Union.png" alt="Menu icon" class="menu-logo">
+          <img src="image/Union.png" alt="Menu icon" id="mobile-menu" data-open="nav-modal" class="menu-logo">
         </nav>
+        <div class="modal" id="nav-modal" data-animation="slideInOutLeft">
+          <div class="modal-dialog">
+            <button
+              type="button"
+              class="close-modal"
+              aria-label="close modal"
+              id="close-menu"
+              data-close
+            >
+              ✕
+            </button>
+            <ul class="modal-nav-links">
+              <li>
+                <a href="#portfolio" class="web-header-link">portfolio</a>
+              </li>
+              <li>
+                <a href="#about" class="web-header-link">about</a>
+              </li>
+              <li>
+                <a href="#contact" class="web-header-link">contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </header>
       <section class="container-section">
         <div class="container">
@@ -53,7 +77,7 @@
           </div>
         </div>
       </section>
-      <section class="card-section">
+      <section class="card-section" id="portfolio">
         <div class="cards">
           <div class="card first">
             <img src="image/Snapshoot-Portfolio-4.png" alt="a baby" class="web">
@@ -193,7 +217,7 @@
           </div>
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <div class="about-section">
           <div class="myself">
             <h2>About<br>Myself</h2>
@@ -248,7 +272,7 @@
           </div>
         </div>
       </section>
-      <section class="contact-bg">
+      <section class="contact-bg" id="contact">
        <div class="contact">
         <div class="form-wrapper">
           <div class="text-contact">
@@ -279,5 +303,6 @@
        </div>
       </section>
     </main>
+    <script src="App.js"></script>
   </body>
 </html>
