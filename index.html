@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-221615733-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-221615733-1');
+</script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="style.css">
@@ -13,18 +22,47 @@
         <a href="index.html" class="logo">My Logo</a>
         <nav>
           <ul class="menu-list">
-          <li><a href="#portfolio" class="web-header-link">porfolio</a></li>
-          <li><a href="#about" class="web-header-link">about</a></li>
-          <li><a href="#contact" class="web-header-link">contact</a></li>
+            <li><a href="#portfolio" class="web-header-link">porfolio</a></li>
+            <li><a href="#about" class="web-header-link">about</a></li>
+            <li><a href="#contact" class="web-header-link">contact</a></li>
           </ul>
-          <img src="image/Union.png" alt="Menu icon" class="menu-logo">
+          <img src="image/Union.png" alt="Menu icon" id="mobile-menu" data-open="nav-modal" class="menu-logo">
         </nav>
+        <div class="modal" id="nav-modal" data-animation="slideInOutLeft">
+          <div class="modal-dialog">
+            <button
+              type="button"
+              class="close-modal"
+              aria-label="close modal"
+              id="close-menu"
+              data-close
+            >
+              ✕
+            </button>
+            <ul class="modal-nav-links">
+              <li>
+                <a href="#portfolio" class="web-header-link">portfolio</a>
+              </li>
+              <li>
+                <a href="#about" class="web-header-link">about</a>
+              </li>
+              <li>
+                <a href="#contact" class="web-header-link">contact</a>
+              </li>
+            </ul>
+          </div>
+          <img
+          src="image/bar.png"
+          alt="bottom bar"
+          class="modal-footer-image"
+        />
+        </div>
       </header>
       <section class="container-section">
         <div class="container">
           <div class="container-items">
             <h1 class="detail one">
-              I'm Mariane <br> Glad to see you. I am available to make changes.
+              I'm Michael Glad to see you
             </h1>
             <p class="detail two">
               I am a software developer! I can help you build a product, feature or website. Look through some of my work and experience. If you like what you see and have a project you need code, don't hesitate to contact me
@@ -44,7 +82,7 @@
           </div>
         </div>
       </section>
-      <section class="card-section">
+      <section class="card-section" id="portfolio">
         <div class="cards">
           <div class="card first">
             <img src="image/Snapshoot-Portfolio-4.png" alt="a baby" class="web">
@@ -184,7 +222,7 @@
           </div>
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <div class="about-section">
           <div class="myself">
             <h2>About<br>Myself</h2>
@@ -239,7 +277,7 @@
           </div>
         </div>
       </section>
-      <section class="contact-bg">
+      <section class="contact-bg" id="contact">
        <div class="contact">
         <div class="form-wrapper">
           <div class="text-contact">
@@ -270,5 +308,6 @@
        </div>
       </section>
     </main>
+    <script src="App.js"></script>
   </body>
 </html>

@@ -5,8 +5,6 @@ body {
   padding: 0;
   min-width: 375px;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 
 main {
@@ -14,6 +12,7 @@ main {
   margin: 12px auto;
   display: flex;
   flex-direction: column;
+  flex: 1 1 auto;
   padding: 12px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -45,13 +44,102 @@ header {
   text-decoration: none;
 }
 
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: rgba(28, 48, 235, 0.7);
+  backdrop-filter: blur(8px);
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.35s ease-in;
+}
+
+.modal.is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-dialog {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: auto;
+  cursor: default;
+  margin-bottom: 2em;
+  padding-top: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-nav-links {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 30px;
+  padding-left: 2em;
+}
+
+.web-header-link {
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.close-modal {
+  color: #fff;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  align-self: flex-end;
+  margin-right: 1.5em;
+  font-size: 1em;
+}
+
+.nav-mobile-header,
+.modal-links {
+  list-style: none;
+}
+
+.modal-footer-image {
+  margin-bottom: 0.5em;
+}
+
+/* Mobile modal Animation */
+[data-animation] .modal-dialog {
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.51, 0.92, 0.24, 1.15);
+}
+
+[data-animation].is-visible .modal-dialog {
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+[data-animation='slideInOutRight'].is-visible .modal-dialog {
+  transform: none;
+}
+
 .container {
   padding-top: 70px;
   margin-top: 12px;
   width: 100%;
   height: auto;
   background-image: url(image/header-shapes\ mobile.png);
-  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -118,7 +206,6 @@ header {
   grid-auto-flow: row;
   width: 100%;
   gap: 40px;
-  align-items: center;
 }
 
 .card {
@@ -126,6 +213,12 @@ header {
   background: white;
   border: 1px solid #dfe1e6;
   border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card .mob {
+  width: 100%;
 }
 
 .card img {
