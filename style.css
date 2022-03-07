@@ -125,6 +125,7 @@ header {
   background-image: url(image/header-shapes\ mobile.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container-items {
@@ -204,6 +205,10 @@ header {
 }
 
 .card .mob {
+  width: 100%;
+}
+
+.card img {
   width: 100%;
 }
 
