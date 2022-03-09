@@ -961,11 +961,6 @@ h2 {
     cursor: pointer;
     text-transform: capitalize;
   }
-  
-  .button a > * {
-    text-decoration: none;
-    color: #396df2;
-  }
 
   .tool1 li {
     font-size: 15px;
