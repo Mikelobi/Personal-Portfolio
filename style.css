@@ -261,6 +261,155 @@ header {
   color: rgb(170, 163, 163);
 }
 
+/* The Modal (background) */
+.modal-work {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-work-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close-work,
+.close-work2,
+.close-work3,
+.close-work4 {
+  display: flex;
+  align-items: center;
+  color: #aaa;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.close-work:hover,
+.close-work:focus,
+.close-work2:hover,
+.close-work2:focus,
+.close-work3:hover,
+.close-work3:focus,
+.close-work4:hover,
+.close-work4:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.image-footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5em;
+}
+
+.modal-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-tool ul {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-tool li {
+  margin-right: 10px;
+}
+
+.mode-language {
+  width: 200px;
+  display: flex;
+  padding-inline-start: 0%;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mode-language li {
+  background: rgb(230, 230, 252);
+  border-radius: 3px;
+  text-align: center;
+  padding: 4px 12px;
+  font-size: 12px;
+}
+
+.mode-language a {
+  text-decoration: none;
+  color: #6070ff;
+}
+
+.modal-body {
+  width: 100%;
+  margin: 20px 0 0;
+}
+
+.modal-body img {
+  width: 100%;
+}
+
+.modal-live {
+  width: 95%;
+  display: flex;
+  list-style: none;
+  margin-left: 5px;
+  padding: 20px 0 0;
+}
+
+.modal-live li {
+  margin-right: 20px;
+}
+
+.modal-button {
+  width: 160px;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  color: #396df2;
+  letter-spacing: 0.03em;
+  border: 1px solid #dfe1e6;
+  box-sizing: border-box;
+  padding: 15px 10px;
+  background: white;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.button a > * {
+  text-decoration: none;
+  color: #396df2;
+}
+
+.modal-button > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img.modal-icon {
+  margin-left: 8px;
+}
+
 .tool1 li {
   font-size: 13px;
   margin: 0;
@@ -583,6 +732,7 @@ h2 {
 }
 
 .menu-list,
+.mode-text,
 .web {
   display: none;
 }
@@ -760,7 +910,68 @@ h2 {
   .fint {
     color: rgb(170, 163, 163);
   }
+
+  .web-modal {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .web-modal p {
+    width: 64%;
+  }
+
+  .links-modal {
+    width: 34%;
+  }
   
+  .mode-language {
+    width: 220px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-inline-start: 0%;
+    list-style: none;
+    align-items: center;
+  }
+
+  .mode-text {
+    display: flex;
+  }
+
+  .modal-live {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 20px 0 0;
+  }
+
+  .modal-button {
+    width: 126px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 10px;
+    text-align: center;
+    align-items: center;
+    color: #396df2;
+    letter-spacing: 0.02em;
+    border: 1px solid #dfe1e6;
+    box-sizing: border-box;
+    padding: 10px 8px;
+    background: white;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: capitalize;
+  }
+  
+  .button a > * {
+    text-decoration: none;
+    color: #396df2;
+  }
+
   .tool1 li {
     font-size: 15px;
     margin: 0;
@@ -771,9 +982,10 @@ h2 {
   .tool2 {
     width: 300px;
     display: flex;
+    flex-wrap: wrap;
     padding-inline-start: 0%;
     list-style: none;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   }
   
