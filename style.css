@@ -377,12 +377,10 @@ header {
   margin-right: 20px;
 }
 
-.modal-live li a {
-  text-decoration: none;
-  color: #396df2;
-}
-
-.modal-button {
+a.button.modal-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 160px;
   font-size: 15px;
   font-style: normal;
@@ -400,10 +398,16 @@ header {
   text-transform: capitalize;
 }
 
-button.button.modal-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+a.button.modal-button:hover {
+  box-shadow: 0 8px 16px rgb(175, 175, 236);
+  color: white;
+  background: rgb(167, 167, 252);
+}
+
+a.button.modal-button:active {
+  background: rgb(44, 94, 233);
+  color: white;
+  transform: translateY(2px);
 }
 
 img.modal-icon {
@@ -602,6 +606,11 @@ h2 {
   font-size: 15px;
   font-weight: 500;
   line-height: 20px;
+}
+
+.modal-live li a {
+  text-decoration: none;
+  color: #396df2;
 }
 
 .form-wrapper {
@@ -927,7 +936,7 @@ h2 {
 
   /* Modal Content/Box */
   .modal-work-content-web {
-   background-color: #fefefe;
+    background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
@@ -1000,9 +1009,9 @@ h2 {
     padding: 20px 0 0;
   }
 
-  .modal-button {
+  a.button.modal-button {
     width: 126px;
-    font-size: 15px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 400;
     line-height: 10px;
