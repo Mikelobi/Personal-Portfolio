@@ -911,6 +911,59 @@ h2 {
     color: rgb(170, 163, 163);
   }
 
+  /* The Modal (background) */
+  .modal-work-web {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  }
+
+  /* Modal Content/Box */
+  .modal-work-content-web {
+   background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+
+  /* The Close Button */
+  .close-work5,
+  .close-work6,
+  .close-work7 {
+    display: flex;
+    align-items: center;
+    color: #aaa;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .close-work5:hover,
+  .close-work5:focus,
+  .close-work6:hover,
+  .close-work6:focus,
+  .close-work7:hover,
+  .close-work7:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .image-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5em;
+  }
+
   .web-modal {
     width: 100%;
     display: flex;
