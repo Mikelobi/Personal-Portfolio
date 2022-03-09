@@ -377,6 +377,11 @@ header {
   margin-right: 20px;
 }
 
+.modal-live li a {
+  text-decoration: none;
+  color: #396df2;
+}
+
 .modal-button {
   width: 160px;
   font-size: 15px;
@@ -395,7 +400,7 @@ header {
   text-transform: capitalize;
 }
 
-.modal-button > * {
+button.button.modal-button {
   display: flex;
   align-items: center;
   justify-content: center;
