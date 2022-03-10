@@ -145,7 +145,7 @@ function modal(number) {
     li.appendChild(a);
     technologyList.appendChild(li);
   });
-  // Create Link and Source 
+  // Create Link and Source
   // Create div for buttons
   const projectButtons = document.createElement('ul');
   projectButtons.className = 'modal-live modal-live-web';
