@@ -26,7 +26,7 @@ const isRequired = (value) => {
   return true;
 };
 
-// Validate email
+// Validate email function
 const checkEmail = () => {
   let valid = false;
   const email = emailEl.value.trim();
