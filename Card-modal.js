@@ -77,7 +77,7 @@ function modal(number) {
   const barImg = document.createElement('img');
   barImg.src = `${projects[number].image}`;
   barDiv.appendChild(barImg);
-  article.appendChild(barDiv);  
+  article.appendChild(barDiv);
   // Create Title modal div
   // Create title header
   const imageDiv = document.createElement('div');
@@ -86,7 +86,6 @@ function modal(number) {
   projectTitle.textContent = `${projects[number].title}`;
   insideDiv.appendChild(imageDiv);
   imageDiv.appendChild(projectTitle);
-  
   // Create x to close modal
   const closeModalBtn = document.createElement('span');
   closeModalBtn.innerHTML = 'X';
@@ -122,8 +121,8 @@ function modal(number) {
   webModalDiv.className = 'web-modal';
   const projectTextDiv = document.createElement('p');
   const projectText = document.createTextNode(
-     `${projects[number].description}`,
-   );
+    `${projects[number].description}`,
+  );
   projectTextDiv.appendChild(projectText);
   webModalDiv.appendChild(projectTextDiv);
   insideDiv.appendChild(webModalDiv);
@@ -146,7 +145,6 @@ function modal(number) {
     li.appendChild(a);
     technologyList.appendChild(li);
   });
-
   // Create Link and Source 
   // Create div for buttons
   const projectButtons = document.createElement('ul');
