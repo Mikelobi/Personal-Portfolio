@@ -13,9 +13,9 @@ const project1 = {
   githubLink: 'https://github.com/Mikelobi/Personal-Portfolio',
 };
 const project2 = {
-  title: 'Tonic',
+  title: 'Multi-Post Stories',
   id: 2,
-  imageSrc: 'image/Snapshoot-Portfolio.png',
+  imageSrc: 'image/Snapshoot-Portfolio-(1).png',
   image: 'image/bar.png',
   language: ['CANOPY', 'Back End Dev', '2015'],
   technologies: ['html', 'css', 'javascript'],
@@ -27,7 +27,7 @@ const project2 = {
 const project3 = {
   title: 'Tonic',
   id: 3,
-  imageSrc: 'image/Snapshoot-Portfolio.png',
+  imageSrc: 'image/Snapshoot-Portfolio-(2).png',
   image: 'image/bar.png',
   language: ['CANOPY', 'Back End Dev', '2015'],
   technologies: ['html', 'css', 'javascript'],
@@ -37,9 +37,9 @@ const project3 = {
   githubLink: 'https://github.com/Mikelobi/Personal-Portfolio',
 };
 const project4 = {
-  title: 'Tonic',
+  title: 'Multi-Post Stories',
   id: 4,
-  imageSrc: 'image/Snapshoot-Portfolio.png',
+  imageSrc: 'image/Snapshoot-Portfolio-(3).png',
   image: 'image/bar.png',
   language: ['CANOPY', 'Back End Dev', '2015'],
   technologies: ['html', 'css', 'javascript'],
