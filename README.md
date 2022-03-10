@@ -15,9 +15,9 @@ See my [Personal-Portfolio](https://mikelobi.github.io/Personal-Portfolio/)
 
 ## Getting Started
 
--Clone the project via terminal or download the package.
+- Clone the project via terminal or download the package.
 
--Open index.html file via browser
+- Open index.html file via browser
 
 ### Prerequisites
 

@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-221615733-1"></script>
 <script>
@@ -10,11 +15,6 @@
 
   gtag('config', 'UA-221615733-1');
 </script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
   </head>
   <body>
     <main class="wrapper">
@@ -102,7 +102,9 @@
                 <li><a href="#">css</a></li>
                 <li><a href="#">javascript</a></li>
               </ul>
-              <button type="button" class="button detail-style2">See Project</button>
+              <button onclick="modal(0)" data-open="project1" class="button detail-style2 open-modal" type="button">
+                See Project
+              </button>
             </div>
           </div>
           <div class="card second">
@@ -122,7 +124,7 @@
                 <li><a href="#">css</a></li>
                 <li><a href="#">javascript</a></li>
               </ul>
-              <button type="button" class="button detail-style2">See Project</button>
+              <button onclick="modal(1)" data-open="project2" type="button" class="button detail-style2">See Project</button>
             </div>
             <div class="card-content web">
               <h2 class="card-heading">Uber Navigation</h2>
@@ -140,7 +142,7 @@
                 <li><a href="#">css</a></li>
                 <li><a href="#">javascript</a></li>
               </ul>
-              <button type="button" class="button detail-style2">See Project</button>
+              <button onclick="modal(1)" data-open="project2" type="button" class="button detail-style2">See Project</button>
             </div>
           </div>
           <div class="card third">
@@ -161,7 +163,7 @@
                 <li><a href="#">css</a></li>
                 <li><a href="#">javascript</a></li>
               </ul>
-              <button type="button" class="button detail-style2">See Project</button>
+              <button onclick="modal(2)" data-open="project3" type="button" class="button detail-style2">See Project</button>
             </div>
             <div class="card-content web">
               <h2 class="card-heading">FACEBOOK 360</h2>
@@ -179,7 +181,7 @@
                 <li><a href="#">css</a></li>
                 <li><a href="#">javascript</a></li>
               </ul>
-              <button type="button" class="button detail-style2">See Project</button>
+              <button onclick="modal(2)" data-open="project3" type="button" class="button detail-style2">See Project</button>
             </div>
           </div>
           <div class="card fourth">
@@ -199,7 +201,7 @@
                 <li><a href="#">css</a></li>
                 <li><a href="#">javascript</a></li>
               </ul>
-              <button type="button" class="button detail-style2">See Project</button>
+              <button onclick="modal(3)" data-open="project4" type="button" class="button detail-style2">See Project</button>
             </div>
             <div class="card-content web">
               <h2 class="card-heading">Multi-Post Stories</h2>
@@ -217,7 +219,7 @@
                 <li><a href="#">css</a></li>
                 <li><a href="#">javascript</a></li>
               </ul>
-              <button type="button" class="button detail-style2">See Project</button>
+              <button onclick="modal(3)" data-open="project4" type="button" class="button detail-style2">See Project</button>
             </div>
           </div>
         </div>
@@ -288,26 +290,30 @@
               I'd love to help with it.
             </p>
           </div>
-          <form
-            action="https://formspree.io/f/mpzbdnke" method="post" class="form-contact"
-          >
+          <form action="https://formspree.io/f/mpzbdnke" id="signup" method="post" class="form-contact">
             <fieldset>
-              <input type="text" name="user-full-name" maxlength="30"
-                placeholder="Full Name" required id="full-name" />
-              <input id="email" type="email"
-                required placeholder="Email address" name="user_email" />
-              <textarea name="user-message" id="user-message" cols="30"
-                rows="5" maxlength="500"
-                required placeholder="Write your message here"
-              ></textarea>
+              <div class="form-field">
+                <input type="text" name="user-full-name" maxlength="30" required placeholder="Full Name" />
+                <small></small>
+              </div>
+              <div class="form-field">
+                <input id="email" type="email" required placeholder="Email address" name="email"/>
+                <small></small>
+              </div>
+              <div class="form-field">
+                <textarea name="message" id="message" cols="30" rows="5" maxlength="500" required placeholder="Write your message here"></textarea>
+                <small></small>
+              </div>
             </fieldset>
             <button type="submit" class="button sub">Get in touch</button>
           </form>
-          <div class="bar"><img src="image/Shape.png" alt="Black horizontal line"></div>
+          <div class="bar"><img src="image/bar.png" alt="Black horizontal line"></div>
         </div>
        </div>
       </section>
     </main>
-    <script src="App.js"></script>
+    
+    <script src="Card-modal.js"></script>
+    <script src="Validate-form.js"></script>
   </body>
 </html>
