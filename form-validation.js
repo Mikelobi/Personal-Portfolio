@@ -37,7 +37,7 @@ const checkEmail = () => {
   } else if (lower !== email) {
     showError(emailTag, 'Email must be lowercase');
   } else {
-    showSuccess(emailEl);
+    showSuccess(emailTag);
     valid = true;
   }
   return valid;
