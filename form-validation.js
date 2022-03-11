@@ -1,6 +1,7 @@
 // Form validation
 const form = document.querySelector('#signup');
 const emailEl = document.querySelector('#email');
+const emailTag = document.querySelector('#tag');
 
 // Functions to show error / success
 const showError = (input, message) => {
@@ -32,9 +33,9 @@ const checkEmail = () => {
   const email = emailEl.value.trim();
   const lower = email.toLowerCase();
   if (!isRequired(email)) {
-    showError(emailEl, 'Email cannot be blank.');
+    showError(emailTag, 'Email cannot be blank.');
   } else if (lower !== email) {
-    showError(emailEl, 'Email must be lowercase');
+    showError(emailTag, 'Email must be lowercase');
   } else {
     showSuccess(emailEl);
     valid = true;
