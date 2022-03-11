@@ -1,7 +1,7 @@
 const contactForm = document.querySelector('#signup');
-const content = JSON.parse(window.localStorage.getItem('storage'));
+const content = JSON.parse(window.localStorage.getItem('datastorage'));
 function check() {
-  if (localStorage.getItem('storage')) {
+  if (localStorage.getItem('datastorage')) {
     contactForm.elements.fullName.value = content.fullName;
     contactForm.elements.email.value = content.email;
     contactForm.elements.message.value = content.message;
@@ -18,7 +18,7 @@ function populateStorage() {
     email,
     message,
   };
-  window.localStorage.setItem('storage', JSON.stringify(storage));
+  window.localStorage.setItem('datastorage', JSON.stringify(storage));
 }
 
 contactForm.addEventListener('change', populateStorage);
