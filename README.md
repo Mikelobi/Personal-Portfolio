@@ -1,12 +1,16 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio-Mobile-Version-Setup
+## Preview
+<p align="center">Home page</p>
+<img src="./image/portfolio.PNG">
+
+<h1 align="center"> Personal Portfolio </h1>
 
 ## Description the project
 This project is to setup a portfolio of mobile version skeleton main page
 
 ## Built With
-* HTML and CSS
+* HTML and CSS and JavaScript
 
 ## Live Demo
 
@@ -33,7 +37,7 @@ See my [Personal-Portfolio](https://mikelobi.github.io/Personal-Portfolio/)
 ### 👤 Author
 - GitHub: [@githubhandle](https://github.com/Mikelobi)
 - Twitter: [@twitterbhandle](https://twitter.com/omulum)
-- Linkedln: [Linkedln](https://www.linkedin.com/in/ugochukwu-omulu-b9697663/)
+- Linkedln: [Linkedln](https://www.linkedin.com/in/omulu/)
 
 ## 🤝 Contributing
 
