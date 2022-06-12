@@ -1,6 +1,10 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio-Mobile-Version-Setup
+## Preview
+<p align="center">Home page</p>
+<img src="./image/portfolio.PNG">
+
+<h1 align="center"> Personal Portfolio </h1>
 
 ## Description the project
 This project is to setup a portfolio of mobile version skeleton main page
